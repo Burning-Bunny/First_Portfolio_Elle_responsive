@@ -12,18 +12,20 @@ a {
 html,
 body {
   font-size: 20px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .article:hover {
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  background-color: #eee;
+
   cursor: pointer;
 }
 .main_article:hover {
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  background-color: #eee;
+
   cursor: pointer;
 }
 /* ------------------header_banner----------------------------- */
@@ -183,6 +185,7 @@ body {
   width: 100%;
   background-color: #c5c5c5;
   padding: 10px;
+  box-sizing: border-box;
 }
 .latest_hotissue .title {
   font-size: 1rem;
@@ -212,7 +215,7 @@ body {
 /* ------------------latest_hotissue----------------------------- */
 /* ------------------star----------------------------- */
 .star {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .star .title {
@@ -320,24 +323,27 @@ body {
 /* ------------------weekly_hotissue----------------------------- */
 .weekly_hotissue {
   background-color: #c5c5c5;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 .weekly_hotissue .title {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin: 10px;
+  margin: 20px;
   padding-top: 10px;
 }
 .weeklyissue_contents {
-  padding-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 .weeklyissue_contents .article {
-  margin: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .weeklyissue_contents .article img {
   width: 100%;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .weeklyissue_contents .article p {
   font-size: 0.8rem;
@@ -347,7 +353,7 @@ body {
 /* ------------------weekly_hotissue----------------------------- */
 /* ------------------fashion----------------------------- */
 .fashion {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .fashion .title {
@@ -358,7 +364,7 @@ body {
 
 .fashion .main_article {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .fashion .main_article .txt {
@@ -409,7 +415,7 @@ body {
 /* ------------------fashion----------------------------- */
 /* ------------------articles_star----------------------------- */
 .articles_star {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 .articles_star .title {
   font-size: 2rem;
@@ -439,6 +445,7 @@ body {
 }
 .articles_star .main_article .txt h3 {
   font-size: 1rem;
+
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -482,7 +489,7 @@ body {
   box-shadow: 3px 3px 3px 3px #000;
   box-sizing: border-box;
   margin: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 .trip .title {
   font-size: 2rem;
@@ -497,6 +504,7 @@ body {
 }
 .trip .article {
   margin: 10px;
+  margin-bottom: 40px;
 }
 .trip .article img {
   width: 100%;
@@ -507,17 +515,18 @@ body {
   font-size: 1rem;
   font-weight: normal;
 }
+.sub_articles 
 /* ------------------trip----------------------------- */
 /* ------------------articles_fashion----------------------------- */
 .articles_fashion {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 .articles_fashion .title {
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px #000;
   position: relative;
-  margin: 10px 30px;
+  margin: 20px 30px;
   line-height: 1em;
 }
 .articles_fashion .title::before {
@@ -562,7 +571,7 @@ body {
   font-weight: bold;
   text-shadow: 1px #000;
   position: relative;
-  margin: 10px 30px;
+  margin: 20px 30px;
   line-height: 1em;
 }
 .articles_lovelife .title::before {
@@ -607,7 +616,7 @@ body {
   font-weight: bold;
   text-shadow: 1px #000;
   position: relative;
-  margin: 10px 30px;
+  margin: 20px 30px;
   line-height: 1em;
 }
 .articles_beauty .title::before {
@@ -777,9 +786,16 @@ body {
 }
 .side_banner .holoscope .contents li {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.side_banner .holoscope .contents .img {
-  margin: 10px;
+.side_banner .holoscope .contents a .img {
+  width: 20%;
+  margin: 20px;
+}
+.side_banner .holoscope .contents a .img img {
+  width: 100%;
+  display: block;
 }
 .side_banner .holoscope .contents .txt h5 {
   font-size: 1.5rem;
@@ -1025,6 +1041,13 @@ body {
 /* ------------------footer----------------------------- */
 /* ------------------medea_query----------------------------- */
 @media all and (min-width: 601px) {
+  .main_visual {
+    margin-bottom: 100px;
+  }
+  .latest_hotissue {
+    margin-bottom: 100px;
+  }
+
   .latest_hotissue .title {
     font-size: 1.4rem;
   }
@@ -1034,7 +1057,9 @@ body {
   .latest_hotissue .hotissue_contents li {
     flex: 1;
   }
-
+  .star {
+    margin-bottom: 100px;
+  }
   .star .main_article {
     display: flex;
   }
@@ -1076,13 +1101,13 @@ body {
   }
 
   .fashion .title {
-    font-size: 3rem;
-  }
-  .fashion .main_article .txt h3 {
     font-size: 2rem;
   }
+  .fashion .main_article .txt h3 {
+    font-size: 1.2rem;
+  }
   .fashion .main_article .txt p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .fashion .article_contents {
     display: flex;
@@ -1096,9 +1121,19 @@ body {
   .fashion .article_contents .article .txt {
     width: 100%;
   }
-
+  .fashion .article_contents .article .txt h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .fashion .article_contents .article .txt p {
+    font-size: 0.6rem;
+  }
+  .articles_star {
+    margin-bottom: 80px;
+  }
   .articles_star .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .articles_star .article_contents {
     display: flex;
@@ -1121,7 +1156,9 @@ body {
   .sub_articles .article_contents .article .txt p {
     display: none;
   }
-
+  .most_like {
+    margin-bottom: 80px;
+  }
   .most_like .most_like_contents {
     display: flex;
     flex-wrap: wrap;
@@ -1129,7 +1166,9 @@ body {
   .most_like .most_like_contents .article {
     width: calc(50% - 20px);
   }
-
+  .articles_life {
+    margin-bottom: 80px;
+  }
   .articles_life .article_contents {
     display: flex;
     flex-wrap: wrap;
@@ -1153,12 +1192,27 @@ body {
     width: 100%;
   }
   .articles_life .article_contents .article .txt h3 {
-    font-size: 1.4rem;
-  }
-  .articles_life .article_contents .article .txt p {
     font-size: 1rem;
   }
+  .articles_life .article_contents .article .txt p {
+    font-size: 0.8rem;
+  }
 
+  .side_banner .brand {
+    margin-bottom: 80px;
+  }
+  .side_banner .holoscope {
+    margin-bottom: 80px;
+  }
+  .side_banner .holoscope .contents .img {
+    width: 30%;
+  }
+  .side_banner .event {
+    margin-bottom: 80px;
+  }
+  .articles_fashion2 {
+    margin-bottom: 80px;
+  }
   .articles_fashion2 .article_contents {
     display: flex;
     flex-wrap: wrap;
@@ -1172,6 +1226,9 @@ body {
   }
   .articles_fashion2 .article_contents .article .txt {
     width: 100%;
+  }
+  .decor {
+    margin-bottom: 80px;
   }
   .decor .article_contents {
     display: flex;
@@ -1192,24 +1249,62 @@ body {
   }
 } /* tablet */
 @media all and (min-width: 1040px) {
-  .wrap {
-    width: 1040px;
+  .main_visual {
+    width: 1280px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
   .gnb {
     display: block;
+  }
+  .latest_hotissue {
+    width: 100%;
+    background-color: #c5c5c5;
+  }
+  .latest_hotissue .title {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .hotissue_contents {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .star {
+    width: 1280px;
+    margin: 0 auto;
   }
   .star .main_article .txt h3 {
     font-size: 3rem;
   }
   .star .main_article .txt p {
-    font-size: 1.8srem;
+    font-size: 1.8rem;
   }
-
+  .elle_youtube {
+    width: 1280px;
+    margin: 0 auto;
+  }
   .weekly_hotissue .weeklyissue_contents {
     flex-wrap: nowrap;
   }
-
+  .weekly_hotissue {
+    width: 100%;
+  }
+  .weekly_hotissue .title {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .weekly_hotissue .weeklyissue_contents {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .fashion {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .articles_star {
+    width: 1280px;
+    margin: 0 auto;
+  }
   .articles_star .articles {
     display: flex;
   }
@@ -1234,11 +1329,33 @@ body {
   .articles_star .article_contents .article .txt p {
     font-size: 0.4rem;
   }
-
+  .trip {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .sub_articles {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .sub_articles .article_contents .article {
+    height: 130px;
+  }
+  .sub_articles .article_contents .article img {
+    height: 100%;
+  }
+  .most_like .title {
+    width: 1280px;
+    margin: 0 auto;
+  }
   .most_like .most_like_contents {
     flex-wrap: nowrap;
+    width: 1280px;
+    margin: 0 auto;
   }
-
+  .articles_life {
+    width: 1280px;
+    margin: 0 auto;
+  }
   .articles_life .article_contents {
     flex-wrap: nowrap;
   }
@@ -1255,13 +1372,15 @@ body {
 
   .banner_fashion {
     display: flex;
+    width: 1280px;
+    margin: 0 auto;
   }
   .banner_fashion .side_banner {
     width: 33.333333%;
     order: 1;
   }
   .banner_fashion .side_banner .holoscope .contents li .img {
-    width: 50%;
+    width: 30%;
   }
   .banner_fashion .side_banner .holoscope .contents li .txt {
     width: 50%;
@@ -1271,6 +1390,22 @@ body {
   }
   .banner_fashion .side_banner .holoscope .contents li .img img {
     width: 100%;
+  }
+  .decor {
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .sub {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .footer_inner {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .footer_left {
+    width: 40%;
   }
 } /* web */
 /* ------------------medea_query----------------------------- */
