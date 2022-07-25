@@ -15,16 +15,12 @@ body {
 }
 
 .article:hover {
-  border: 5px solid #f00;
-  padding: 10px;
   box-sizing: border-box;
   background-color: black;
   color: white;
   cursor: pointer;
 }
 .main_article:hover {
-  border: 5px solid #f00;
-  padding: 10px;
   box-sizing: border-box;
   background-color: black;
   color: white;
@@ -125,7 +121,7 @@ body {
 /* ------------------header_gnb----------------------------- */
 /* ------------------main_visual----------------------------- */
 .main_visual {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .main_visual img {
   width: 100%;
@@ -160,7 +156,7 @@ body {
 .main_visual .slick-dots {
   display: flex;
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: 50%;
   transform: translate(-50%);
   gap: 10px;
@@ -186,6 +182,7 @@ body {
 .latest_hotissue {
   width: 100%;
   background-color: #c5c5c5;
+  padding: 10px;
 }
 .latest_hotissue .title {
   font-size: 1rem;
@@ -199,9 +196,11 @@ body {
 }
 .hotissue_contents .article {
   width: 100%;
-  margin: 0 10px;
+  margin-bottom: 40px;
+  padding: 10px;
 }
 .hotissue_contents .article img {
+  padding-top: 10px;
   width: 100%;
 }
 .hotissue_contents .article p {
@@ -213,7 +212,7 @@ body {
 /* ------------------latest_hotissue----------------------------- */
 /* ------------------star----------------------------- */
 .star {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .star .title {
@@ -231,7 +230,7 @@ body {
 .star .main_article .txt h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .star .main_article .txt p {
   font-size: 1rem;
@@ -246,7 +245,8 @@ body {
 }
 
 .star .article_contents .article {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0;
   display: flex;
 }
 .star .article_contents .article .img {
@@ -264,7 +264,7 @@ body {
 .star .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .star .article_contents .article p {
   font-size: 0.8rem;
@@ -277,7 +277,7 @@ body {
   margin: 0 auto;
   background-color: #000;
   padding: 50px 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .elle_youtube .video1,
@@ -291,16 +291,16 @@ body {
 .elle_youtube .slick-dots {
   display: flex;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translate(-50%);
-  gap: 15px;
+  gap: 10px;
 }
 
 .elle_youtube .slick-dots li {
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   display: flex;
   background: #c5c5c5;
@@ -337,7 +337,7 @@ body {
 .weeklyissue_contents .article img {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .weeklyissue_contents .article p {
   font-size: 0.8rem;
@@ -385,7 +385,7 @@ body {
 .fashion .article_contents .article {
   display: flex;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .fashion .article_contents .article .img {
   width: 50%;
@@ -409,7 +409,7 @@ body {
 /* ------------------fashion----------------------------- */
 /* ------------------articles_star----------------------------- */
 .articles_star {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_star .title {
   font-size: 2rem;
@@ -440,7 +440,7 @@ body {
 .articles_star .main_article .txt h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_star .main_article .txt p {
   font-size: 0.8rem;
@@ -470,7 +470,7 @@ body {
 .articles_star .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_star .article_contents .article p {
   font-size: 0.6rem;
@@ -501,7 +501,7 @@ body {
 .trip .article img {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .trip .article h3 {
   font-size: 1rem;
@@ -510,7 +510,7 @@ body {
 /* ------------------trip----------------------------- */
 /* ------------------articles_fashion----------------------------- */
 .articles_fashion {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_fashion .title {
   font-size: 2rem;
@@ -547,7 +547,7 @@ body {
 .articles_fashion .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_fashion .article_contents .article p {
   font-size: 0.6rem;
@@ -555,7 +555,7 @@ body {
 /* ------------------articles_fashion----------------------------- */
 /* ------------------articles_lovelife----------------------------- */
 .articles_lovelife {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_lovelife .title {
   font-size: 2rem;
@@ -592,7 +592,7 @@ body {
 .articles_lovelife .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_lovelife .article_contents .article p {
   font-size: 0.6rem;
@@ -600,7 +600,7 @@ body {
 /* ------------------articles_lovelife----------------------------- */
 /* ------------------articles_beauty----------------------------- */
 .articles_beauty {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_beauty .title {
   font-size: 2rem;
@@ -637,7 +637,7 @@ body {
 .articles_beauty .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_beauty .article_contents .article p {
   font-size: 0.6rem;
@@ -670,7 +670,7 @@ body {
 /* ------------------most_like----------------------------- */
 /* ------------------articles_life----------------------------- */
 .articles_life {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_life .title {
   font-size: 2rem;
@@ -707,7 +707,7 @@ body {
 .articles_life .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_life .article_contents .article p {
   font-size: 0.6rem;
@@ -783,7 +783,7 @@ body {
 }
 .side_banner .holoscope .contents .txt h5 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .side_banner .holoscope .contents .txt span {
   font-size: 0.6rem;
@@ -835,7 +835,7 @@ body {
 /* ------------------side_banner----------------------------- */
 /* ------------------articles_fashion----------------------------- */
 .articles_fashion2 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .articles_fashion2 .title {
   font-size: 2rem;
@@ -872,7 +872,7 @@ body {
 .articles_fashion2 .article_contents .article h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .articles_fashion2 .article_contents .article p {
   font-size: 0.6rem;
@@ -906,7 +906,7 @@ body {
 .decor .article img {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .decor .article h3 {
   font-size: 1rem;
@@ -933,7 +933,7 @@ body {
 }
 .sub .subscribe .txt p {
   font-size: 0.8rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .sub .subscribe .txt .btn_sub {
   width: 100px;
@@ -965,7 +965,7 @@ body {
 }
 .sub .instagram .txt p {
   font-size: 0.8rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .sub .instagram .txt .btn_sub {
   width: 100px;

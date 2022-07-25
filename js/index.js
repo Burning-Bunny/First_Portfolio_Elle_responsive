@@ -15,30 +15,40 @@ $(function () {
     mute: true,
     startAt: 0,
     showControls: true,
+    stopMovieOnBlur: true,
+    playOnlyIfVisible: true,
   });
   $(".video2").YTPlayer({
     autoPlay: false,
     mute: true,
     startAt: 0,
     showControls: true,
+    stopMovieOnBlur: true,
+    playOnlyIfVisible: true,
   });
   $(".video3").YTPlayer({
     autoPlay: false,
     mute: true,
     startAt: 0,
     showControls: true,
+    stopMovieOnBlur: true,
+    playOnlyIfVisible: true,
   });
   $(".video4").YTPlayer({
     autoPlay: false,
     mute: true,
     startAt: 0,
     showControls: true,
+    stopMovieOnBlur: true,
+    playOnlyIfVisible: true,
   });
   $(".video5").YTPlayer({
     autoPlay: false,
     mute: true,
     startAt: 0,
     showControls: true,
+    stopMovieOnBlur: true,
+    playOnlyIfVisible: true,
   });
 
   $(".elle_youtube").slick({
