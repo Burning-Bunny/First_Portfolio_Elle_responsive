@@ -55,14 +55,15 @@ body {
 .header_gnb {
   width: 100%;
   position: relative;
-  margin: 20px 0;
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
-  position: sticky;
-  top: 0;
   background-color: #fff;
   z-index: 1;
+}
+.header_gnb_fix {
+  position: fixed;
+  top: 0;
 }
 .menu01 {
   float: left;
@@ -1115,7 +1116,7 @@ body {
   cursor: pointer;
 }
 .top_btn i {
-  font-size: 2rem;
+  font-size: 40px;
   color: #f00;
 }
 /* ------------------footer----------------------------- */

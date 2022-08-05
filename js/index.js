@@ -6,46 +6,46 @@ $(document).ready(function () {
     arrows: true,
   });
 
-  $(".video1").YTPlayer({
-    autoPlay: false,
-    mute: true,
-    startAt: 0,
-    showControls: true,
-    stopMovieOnBlur: true,
-    playOnlyIfVisible: true,
-  });
-  $(".video2").YTPlayer({
-    autoPlay: false,
-    mute: true,
-    startAt: 0,
-    showControls: true,
-    stopMovieOnBlur: true,
-    playOnlyIfVisible: true,
-  });
-  $(".video3").YTPlayer({
-    autoPlay: false,
-    mute: true,
-    startAt: 0,
-    showControls: true,
-    stopMovieOnBlur: true,
-    playOnlyIfVisible: true,
-  });
-  $(".video4").YTPlayer({
-    autoPlay: false,
-    mute: true,
-    startAt: 0,
-    showControls: true,
-    stopMovieOnBlur: true,
-    playOnlyIfVisible: true,
-  });
-  $(".video5").YTPlayer({
-    autoPlay: false,
-    mute: true,
-    startAt: 0,
-    showControls: true,
-    stopMovieOnBlur: true,
-    playOnlyIfVisible: true,
-  });
+  // $(".video1").YTPlayer({
+  //   autoPlay: false,
+  //   mute: true,
+  //   startAt: 0,
+  //   showControls: true,
+  //   stopMovieOnBlur: true,
+  //   playOnlyIfVisible: true,
+  // });
+  // $(".video2").YTPlayer({
+  //   autoPlay: false,
+  //   mute: true,
+  //   startAt: 0,
+  //   showControls: true,
+  //   stopMovieOnBlur: true,
+  //   playOnlyIfVisible: true,
+  // });
+  // $(".video3").YTPlayer({
+  //   autoPlay: false,
+  //   mute: true,
+  //   startAt: 0,
+  //   showControls: true,
+  //   stopMovieOnBlur: true,
+  //   playOnlyIfVisible: true,
+  // });
+  // $(".video4").YTPlayer({
+  //   autoPlay: false,
+  //   mute: true,
+  //   startAt: 0,
+  //   showControls: true,
+  //   stopMovieOnBlur: true,
+  //   playOnlyIfVisible: true,
+  // });
+  // $(".video5").YTPlayer({
+  //   autoPlay: false,
+  //   mute: true,
+  //   startAt: 0,
+  //   showControls: true,
+  //   stopMovieOnBlur: true,
+  //   playOnlyIfVisible: true,
+  // });
 
   $(".elle_youtube").slick({
     centerMode: true,
@@ -87,10 +87,12 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 300) {
       $(".top_btn").fadeIn();
+      $(".header_gnb").addClass("header_gnb_fix");
     } else {
       $(".top_btn").fadeOut();
+      $(".header_gnb").removeClass("header_gnb_fix");
     }
   });
   $(".top_btn").click(function () {
