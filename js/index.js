@@ -1,8 +1,4 @@
-document.cookie = "safeCookie1=foo; SameSite=Lax";
-document.cookie = "safeCookie2=foo";
-document.cookie = "crossCookie=bar; SameSite=None; Secure";
-
-$(function () {
+$(document).ready(function () {
   $(".main_visual").slick({
     autoplay: true,
     autoplaySpeed: 2000,
@@ -80,5 +76,30 @@ $(function () {
     autoplaySpeed: 2000,
     dots: true,
     arrows: true,
+  });
+
+  $(".ham_btn").click(function () {
+    $(".lnb_hammenu").fadeIn();
+  });
+
+  $(".ham_close").click(function () {
+    $(".lnb_hammenu").fadeOut();
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      $(".top_btn").fadeIn();
+    } else {
+      $(".top_btn").fadeOut();
+    }
+  });
+  $(".top_btn").click(function () {
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
   });
 });

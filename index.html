@@ -13,12 +13,16 @@
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <!-- ytplayer -->
-    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- xeicon -->
+
+
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
 </head>
 <body>
 <!-- ------------------------------------header_banner---------------------------------- -->
+
     <div class="header_banner" id="header">
         <div class="banner_img">            
             <a href="#">
@@ -37,13 +41,8 @@
     <div class="header_gnb">
         <ul class="menu01">
             <li class="ham_btn">
-                <label for="ham_btn">
+                <div >
                     <img src="./img/icon/El_PC_btn_menu_open.svg" alt=""> 
-                </label>
-                <input type="checkbox" name="ham_btn" id="ham_btn">
-                <div class="lnb">
-        
-
                 </div>
             </li>
             <li class="logo">
@@ -84,6 +83,112 @@
     
     
 <!-- ------------------------------------header_gnb---------------------------------- -->
+<!-- ------------------------------------ham_lnb---------------------------------- -->
+<div class="lnb_hammenu">
+    <div class="lnb_btns">
+        <ul class="lnb_close">
+            <li class="ham_close">
+                <i class="xi-close"></i>
+            </li>
+            <li>
+                <a href="/index.html">
+                    <img src="./img/icon/El_PC_logo_allmenu.png" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="login_btns">
+            <li class="login">
+                <a href="#">LOGIN</a>
+            </li>
+            <li class="signup">
+                <a href="#">SIGNUP</a>
+            </li>
+            <li class="search_btn">
+                <i class="xi-search"></i>
+            </li>
+        </ul>      
+    </div>
+    <ul class="ham_lnb">
+        <li class="ham_menu"><h3>FASHION</h3>
+            <ul class="sub_menu">
+                <li>TRENDS</li>
+                <li>CELEBRITY STYLE</li>
+                <li>HOW TO</li>
+                <li>STREET STYLE</li>
+                <li>FASHION WEEK</li>
+                <li>DESIGNERS</li>
+                <li>SHOPPING</li>
+                <li>ACCESSORIES</li>
+                <li>WATCH</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>BEAUTY</h3>
+            <ul class="sub_menu">
+                <li>MAKE-UP</li>
+                <li>SKINCARE</li>
+                <li>HAIR</li>
+                <li>TIPS</li>
+                <li>HEALTH</li>
+                <li>FITNESS</li>
+                <li>BEAUTY ITEM</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>STAR</h3>
+            <ul class="sub_menu">
+                <li>INTERVIEW</li>
+                <li>GOSSIP</li>
+                <li>CELEB NEWS</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>CULTURE</h3>
+            <ul class="sub_menu">
+                <li>MUSIC</li>
+                <li>MOVIEY&TV</li>
+                <li>BOOKS</li>
+                <li>ART&DESIGN</li>
+                <li>SPORTS</li>
+            </ul>
+        </li>
+        <li class="ham_menu">
+            <div class="ham_deco"><img src="./img/icon/elledeco_navi_white-pc2.png" alt=""></div>
+            <ul class="sub_menu">
+                <li>DECORATION</li>
+                <li>TRAVEL</li>
+                <li>PLACE</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>LOVE & LIFE</h3>
+            <ul class="sub_menu">
+                <li>FOOD</li>
+                <li>TECH</li>
+                <li>CAR</li>
+                <li>LOVE</li>
+                <li>RELATION TIPS</li>
+                <li>SEX</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>SOCIETY</h3>
+            <ul class="sub_menu">
+                <li>WOMEN&SOCIETY</li>
+                <li>CAREER TIPS</li>
+                <li>MENTOR</li>
+            </ul>
+        </li>
+        <li class="ham_menu"><h3>HOROSCOPE</h3></li>
+        <li class="ham_menu"><h3>EVENT</h3>
+            <ul class="sub_menu">
+                <li>ONSGOING EVENT</li>
+                <li>REVIEW</li>
+                <li>NOTICE</li>
+            </ul>
+        </li>
+        <li class="ham_menu ham_ellemenu"><h3>ELLE</h3><div class="ham_shop"><img src="./img/icon/elleshop_navi.png" alt=""></div> </li>
+        <li class="ham_menu ham_ellemenu"><div class="ham_youtube"><img src="./img/icon/youtube_red.png" alt=""></div><h3>YOUTUBE</h3></li>
+    </ul>
+</div>
+
+<!-- ------------------------------------ham_lnb---------------------------------- -->
 <!-- ------------------------------------main_visual---------------------------------- -->
     <section class="wrap">
         <div class="main_visual">
@@ -228,7 +333,7 @@
         </section>
     <!-- ------------------------------------star---------------------------------- -->
     <!-- ------------------------------------elle_youtube---------------------------------- -->
-    <section class="elle_youtube">
+    <!-- <section class="elle_youtube">
         <div class="video1"  data-property="{videoURL:'https://www.youtube.com/embed/TWbt7mWRWso',containment:'self',startAt:0,mute:true,autoPlay:true,loop:false,opacity:1}" >
             <h3 class="caption">
                 *최초공개* 로제가 거울 셀카 찍는 법은?💖 챙의 폰 속 블랙핑크 멤버들 별명 공개! 지수🐢🐰 & 제니🐻 & 리사🤍 ROSÉ Ask Me Anything🌹 | ELLE KOREA
@@ -254,7 +359,7 @@
                 [속보] 윤아 짤 폭로전 💖 ‘빅마우스’ 비주얼 커플 탄생 역사가 궁금해? 🤭_소녀시대, 레몬 소주, 이종석, 이준호 I ELLE KOREA
             </h3>
         </div>
-    </section>
+    </section> -->
     <!-- ------------------------------------elle_youtube---------------------------------- -->
     
     <!-- ------------------------------------fashion---------------------------------- -->
@@ -1102,6 +1207,9 @@
                     <span>&copy; 2020 Heast Joongang. All Rights Reserved.</span>
                 </div>
             </div>
+        </div>
+        <div class="top_btn">
+            <i class="xi-caret-up-circle-o"></i>
         </div>
 
     </footer>
