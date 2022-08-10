@@ -58,7 +58,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
 }
 .header_gnb_fix {
@@ -121,7 +121,9 @@ body {
   color: #fff;
   display: none;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
 .lnb_hammenu a {
   color: #fff;
 }
